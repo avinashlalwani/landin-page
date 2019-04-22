@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="canonical" href="https://engage.liveperson.com/usage/in-app-messaging/" />
+	
+	<title>In App Messaging</title>
+	
+	<script src="//tags.tiqcdn.com/utag/liveperson/main/prod/utag.sync.js"></script>
+	<meta name="description" content="">
+
+	<!-- Google Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700|Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+	
+	<!-- Styles -->
+	<link rel="stylesheet" href="style.css">
+
+	<!-- Scroll Reveal -->
+	<script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
+	<script>
+		window.sr = ScrollReveal({ viewFactor: .2, easing: 'ease-in', scale: 1, distance: '4em' });
+		sr.reveal('.step-1', { opacity: 0 });
+		sr.reveal('.step-1-aside', { viewFactor: .8, delay: 200, mobile: false });
+		sr.reveal('.step-2', { opacity: 0 , viewFactor: .05 });
+		sr.reveal('.step-2-aside', { viewFactor: .8, delay: 200, mobile: false });
+	</script>
+
+</head>
+
+<body class="body-usage-campaign in-app-messaging">
+
+	<script async src="/usage/js/udo.min.js"></script>
+
+	<!-- Tracking: Tealium -->
+	<script type="text/javascript">
+	(function(a,b,c,d) {
+	a='https://tags.tiqcdn.com/utag/liveperson/main/prod/utag.js';
+	b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+	a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+	})();
+	</script>
+    
+	<header>
+		<nav>
+		    <ul>
+		        <li>
+					<a href="https://www.liveperson.com"><img src="https://www.liveperson.com/sites/default/files/pictures/nav/Logo-LP-White.png" srcset="https://www.liveperson.com/sites/default/files/pictures/nav/Logo-LP-White@2x.png 2x" alt="LivePerson" title="LivePerson"></a>
+				</li>
+		    </ul>
+		</nav>
+
+		<div class="big-nav-wrapper">
+			<div class="home_b nav-2017 nav-desktop">
+				<div class="top_nav">
+					
+					<!--TOP MENU-->
+					<div class="top_menu dark">
+						<div class="top-menu-container">
+							
+							<div class="left">
+								<div class="logo">
+									<a href="https://www.liveperson.com/"><img src="https://www.liveperson.com/sites/default/files/pictures/nav/Logo-LP-White.png" srcset="https://www.liveperson.com/sites/default/files/pictures/nav/Logo-LP-White@2x.png 2x" /></a>
+								</div>
+							</div>
+
+							<div class="right">
+								
+								<div class="nav-link-div nav-link-platform">
+									<span class="nav-link">Products</span>
+									<div class="nav-open nav-open-products">
+										<div class="nav-open-bottom">
+											<div>
+												<a class="nav-open-sublink nav-open-sublink-messaging-channels" href="https://www.liveperson.com/products/messaging-channels/">Messaging channels</a>
+												<a class="nav-open-sublink nav-open-sublink-ai-bots" href="https://www.liveperson.com/products/ai-chatbots/">AI-powered bots</a>
+												<a class="nav-open-sublink nav-open-sublink-ctm" href="https://www.liveperson.com/products/call-to-message/">Call-to-Message</a>
+												<a class="nav-open-sublink nav-open-sublink-advanced-management" href="https://www.liveperson.com/products/advanced-management/">Advanced management</a>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="nav-link-div nav-link-platform">
+									<span class="nav-link">Solutions</span>
+									<div class="nav-open nav-open-solutions">
+										<div class="nav-open-bottom">
+											<div class="nav-open-bottom-col-2">
+												<h3>By industry</h3>
+												<a class="nav-open-sublink nav-open-sublink-retail" href="https://www.liveperson.com/solutions/retail/">Retail</a>
+												<a class="nav-open-sublink nav-open-sublink-finserv" href="https://www.liveperson.com/solutions/finserv/">FinServ</a>
+												<a class="nav-open-sublink nav-open-sublink-telco" href="https://www.liveperson.com/solutions/telco/">Telco</a>
+												<a class="nav-open-sublink nav-open-sublink-travel" href="https://www.liveperson.com/solutions/travel/">Travel</a>
+												<a class="nav-open-sublink nav-open-sublink-insurance" href="https://www.liveperson.com/solutions/insurance/">Insurance</a>
+												<a class="nav-open-sublink nav-open-sublink-education" href="https://www.liveperson.com/solutions/education/">Education</a>
+												<a class="nav-open-sublink nav-open-sublink-automotive" href="https://www.liveperson.com/solutions/automotive/">Automotive</a>
+											</div>
+											<div class="nav-open-bottom-col-2">
+												<h3>By role</h3>
+												<a class="nav-open-sublink nav-open-sublink-marketing" href="https://www.liveperson.com/solutions/roles/">Marketing</a>
+												<a class="nav-open-sublink nav-open-sublink-sales" href="https://www.liveperson.com/solutions/roles/">Sales</a>
+												<a class="nav-open-sublink nav-open-sublink-customer-care" href="https://www.liveperson.com/solutions/roles/">Customer care</a>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="nav-link-div nav-link-pricing">
+									<a class="nav-link" href="https://www.liveperson.com/pricing">Pricing</a>
+								</div>
+
+								<div class="nav-link-div nav-link-partners">
+									<span class="nav-link">Partners</span>
+									<div class="nav-open nav-open-partners">
+										<div class="nav-open-bottom">
+											<a class="nav-open-sublink nav-open-sublink-referral" href="https://www.liveperson.com/partners/digital-agency/">Digital agencies</a>
+											<a class="nav-open-sublink nav-open-sublink-bpo" href="https://www.liveperson.com/partners/bpo/">BPOs</a>
+											<a class="nav-open-sublink nav-open-sublink-reseller" href="https://www.liveperson.com/partners/solution-provider/">Solution providers</a>
+										</div>
+									</div>
+								</div>
+
+								<div class="nav-link-div nav-link-resources">
+									<span class="nav-link">Resources</span>
+									<div class="nav-open nav-open-resources">
+										<div class="nav-open-bottom">
+											<a class="nav-open-sublink nav-open-sublink-resources" href="https://www.liveperson.com/resources/">Resource library</a>
+											<a class="nav-open-sublink nav-open-sublink-knowledge" target="_blank" href="https://knowledge.liveperson.com/">Knowledge Center</a>
+											<a class="nav-open-sublink nav-open-sublink-developers" href="https://developers.liveperson.com/">Developers</a>
+											<a class="nav-open-sublink nav-open-sublink-blog" href="https://www.liveperson.com/connected-customer">Blog</a>
+										</div>
+									</div>
+								</div>
+
+								<div class="nav-link-div nav-link-company">
+									<span class="nav-link">Company</span>
+									<div class="nav-open nav-open-company">
+										<div class="nav-open-bottom">
+											<a class="nav-open-sublink nav-open-sublink-about" href="https://www.liveperson.com/company/">About us</a>
+											<a class="nav-open-sublink nav-open-sublink-pr" href="https://www.liveperson.com/company/press-releases">Press releases</a>
+											<a class="nav-open-sublink nav-open-sublink-ir" href="https://www.liveperson.com/company/ir">Investor relations</a>
+											<a class="nav-open-sublink nav-open-sublink-careers" href="https://www.liveperson.com/company/careers">Careers</a>
+											<a class="nav-open-sublink nav-open-sublink-contact" href="https://www.liveperson.com/company/contact">Contact</a>
+										</div>
+									</div>
+								</div>
+								<a class="button sign-in" href="https://admin.liveperson.net">Sign In</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="home_b nav-2017 nav-mobile">
+				<div class="top_nav">
+				
+					<!--TOP MENU-->
+					<div class="top_menu">
+						<div class="top-menu-container">
+							<div class="logo">
+								<a class="to_home" href="https://www.liveperson.com/">
+									<img src="https://www.liveperson.com/sites/default/files/pictures/nav/Logo-LP-White.png" srcset="https://www.liveperson.com/sites/default/files/pictures/nav/Logo-LP-White@2x.png 2x" />	
+								</a>
+							</div>
+							<a class="button sign-in" href="https://admin.liveperson.net">Sign In</a>
+						</div>
+
+						<div class="nav-mobile-internal">
+							<p class="button hamburger hamburger-close">
+								<img src="https://www.liveperson.com/sites/default/files/pictures/nav/button-close-menu.png" srcset="https://www.liveperson.com/sites/default/files/pictures/nav/button-close-menu@2x.png 2x" alt="Menu" title="Menu" />
+							</p>
+
+							<div class="logo">
+								<a class="to_home" href="https://www.liveperson.com/"><img src="https://www.liveperson.com/sites/default/files/pictures/nav/Logo-LP-White.png" srcset="https://www.liveperson.com/sites/default/files/pictures/nav/Logo-LP-White@2x.png 2x" alt="LivePerson Logo" title="LivePerson Logo" /></a>
+							</div>
+							
+							<a class="button sign-in" href="https://admin.liveperson.net">Sign In</a>
+
+							<ul class="nav-mobile-sub-ul">
+								<li class="nav-mobile-sub-li nav-mobile-sub-open">Products
+									<ul class="nav-mobile-sub-sub-ul">
+										<li class="nav-mobile-sub-li">
+											<a class="nav-open-sublink" href="https://www.liveperson.com/products/messaging-channels/">Messaging channels</a>
+										</li>
+										<li class="nav-mobile-sub-li">
+											<a class="nav-open-sublink" href="https://www.liveperson.com/products/ai-chatbots/">AI-powered bots</a>
+										</li>
+										<li class="nav-mobile-sub-li">
+											<a class="nav-open-sublink" href="https://www.liveperson.com/products/call-to-message/">Call-to-Message</a>
+										</li>
+										<li class="nav-mobile-sub-li">
+											<a class="nav-open-sublink" href="https://www.liveperson.com/products/advanced-management/">Advanced management</a>
+										</li>
+									</ul>
+								</li>
+
+								<li class="nav-mobile-sub-li nav-mobile-sub-open nav-mobile-sub-open-solutions">Solutions
+									<ul class="nav-mobile-sub-sub-ul">
+										<li class="nav-mobile-sub-li nav-mobile-sub-li-header">By industry</li>
+										<li class="nav-mobile-sub-li">
+											<a class="nav-open-sublink" href="https://www.liveperson.com/solutions/retail/">Retail</a>
+										</li>
+										<li class="nav-mobile-sub-li">
+											<a class="nav-open-sublink" href="https://www.liveperson.com/solutions/finserv/">FinServ</a>
+										</li>
+										<li class="nav-mobile-sub-li">
+											<a class="nav-open-sublink" href="https://www.liveperson.com/solutions/telco/">Telco</a>
+										</li>
+										<li class="nav-mobile-sub-li">
+											<a class="nav-open-sublink" href="https://www.liveperson.com/solutions/travel/">Travel</a>
+										</li>
+										<li class="nav-mobile-sub-li">
+											<a class="nav-open-sublink" href="https://www.liveperson.com/solutions/insurance/">Insurance</a>
+										</li>
+										<li class="nav-mobile-sub-li">
+											<a class="nav-open-sublink" href="https://www.liveperson.com/solutions/education/">Education</a>
+										</li>
+										<li class="nav-mobile-sub-li">
+											<a class="nav-open-sublink" href="https://www.liveperson.com/solutions/automotive/">Automotive</a>
+										</li>
+										<li class="nav-mobile-sub-li nav-mobile-sub-li-header">By role</li>
+										<li class="nav-mobile-sub-li">
+											<a class="nav-open-sublink" href="https://www.liveperson.com/solutions/roles/">Marketing</a>
+										</li>
+										<li class="nav-mobile-sub-li">
+											<a class="nav-open-sublink" href="https://www.liveperson.com/solutions/roles/">Sales</a>
+										</li>
+										<li class="nav-mobile-sub-li">
+											<a class="nav-open-sublink" href="https://www.liveperson.com/solutions/roles/">Customer care</a>
+										</li>
+									</ul>
+								</li>
+
+								<li class="nav-mobile-sub-li">
+									<a class="nav-open-sublink" href="https://www.liveperson.com/pricing">Pricing</a>
+								</li>
+
+								<li class="nav-mobile-sub-li nav-mobile-sub-open">Partners
+									<ul class="nav-mobile-sub-sub-ul">
+										<li class="nav-mobile-sub-li">
+											<a class="nav-open-sublink" href="https://www.liveperson.com/partners/digital-agency/">Digital agencies</a>
+										</li>
+										<li class="nav-mobile-sub-li">
+											<a class="nav-open-sublink" href="https://www.liveperson.com/partners/bpo/">BPOs</a>
+										</li>
+										<li class="nav-mobile-sub-li">
+											<a class="nav-open-sublink" href="https://www.liveperson.com/partners/solution-provider/">Solution providers</a>
+										</li>
+									</ul>
+								</li>
+
+								<li class="nav-mobile-sub-li nav-mobile-sub-open">Resources
+									<ul class="nav-mobile-sub-sub-ul">
+										<li class="nav-mobile-sub-li">
+											<a class="nav-open-sublink" href="https://www.liveperson.com/resources/">Resource library</a>
+										</li>
+										<li class="nav-mobile-sub-li">
+											<a class="nav-open-sublink" target="_blank" href="https://knowledge.liveperson.com/">Knowledge Center</a>
+										</li>
+										<li class="nav-mobile-sub-li">
+											<a class="nav-open-sublink" href="https://developers.liveperson.com/">Developers</a>
+										</li>
+										<li class="nav-mobile-sub-li">
+											<a class="nav-open-sublink" href="https://www.liveperson.com/connected-customer">Blog</a>
+										</li>
+									</ul>
+								</li>
+
+								<li class="nav-mobile-sub-li nav-mobile-sub-open">Company
+									<ul class="nav-mobile-sub-sub-ul">
+										<li class="nav-mobile-sub-li">
+											<a class="nav-open-sublink" href="https://www.liveperson.com/company/">About us</a>
+										</li>
+										<li class="nav-mobile-sub-li">
+											<a class="nav-open-sublink" href="https://www.liveperson.com/company/press-releases">Press releases</a>
+										</li>
+										<li class="nav-mobile-sub-li">
+											<a class="nav-open-sublink" href="https://www.liveperson.com/company/ir">Investor relations</a>
+										</li>
+										<li class="nav-mobile-sub-li">
+											<a class="nav-open-sublink" href="https://www.liveperson.com/company/careers">Careers</a>
+										</li>
+										<li class="nav-mobile-sub-li">
+											<a class="nav-open-sublink" href="https://www.liveperson.com/company/contact">Contact</a>
+										</li>
+									</ul>
+								</li>
+							</ul>	
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<script async src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script async src="https://engage.liveperson.com/usage/js/nav.min.js"></script>
+	<script async src="https://app-sjg.marketo.com/js/forms2/js/forms2.min.js"></script>
+
+	<!-- HERO -->
+	<div id="hero" class="hero hero-in-app-messaging">
+		<div class="container">
+			<div class="hero-text">
+				<h1>Consumers have moved to messaging <br>Now brands must too.</h1>
+				<p></p>
+			</div>
+
+			<!-- Foreground images for the hero section. Background images are in: _landing-page.scss -->
+			<div class="hero-image">
+				<img src="https://engage.liveperson.com/usage/img/in-app-mainImage.png">
+			</div>
+		</div>
+	</div>
+	<!-- END HERO -->
+
+	<div class="form top">
+		<div class="container">
+			<form id="mktoForm_2580"></form>
+			<script>MktoForms2.loadForm("//app-sjg.marketo.com", "501-BLE-979", 2580,function(form) {
+	            form.onSuccess(function(values, followUpUrl) {
+	            	$('.form .container').html('<p>Thank you! A representative will contact you shortly.</p>');
+	                ga('send', 'event', 'form', 'submit', 'request pricing');
+					fbq('track', 'Lead');
+					var capterra_vkey = '2204790610e633c11ee2cfb2140ab50a',
+					capterra_vid = '491',
+					capterra_prefix = (('https:' == document.location.protocol) ? 'https://ct.capterra.com' : 'http://ct.capterra.com');
+					(function() {
+					var ct = document.createElement('script'); ct.type = 'text/javascript'; ct.async = true;
+					ct.src = capterra_prefix + '/capterra_tracker.js?vid=' + capterra_vid + '&vkey=' + capterra_vkey;
+					var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ct, s);
+				})();
+
+				window.uetq = window.uetq || [];
+				window.uetq.push
+				({ 'ec':'form', 'ea':'submit', 'el':'request pricing'});
+
+				new Image().src = 'https://dc.ads.linkedin.com/collect/?pid=66011&conversionId=868780&fmt=gif';
+				new Image().src = '//insight.adsrvr.org/track/conv/?adv=y66nf6t&ct=0:88fomqo&fmt=3';
+
+				goog_snippet_vars = function() {
+				  var w = window;
+				  w.google_conversion_id = 991424858;
+				  w.google_conversion_label = "AiGVCKDQqX4Q2uLf2AM";
+				  w.google_remarketing_only = false;
+				}
+
+				// DO NOT CHANGE THE CODE BELOW
+				goog_report_conversion = function(url) {
+				  goog_snippet_vars();
+				  window.google_conversion_format = "3";
+				  var opt = new Object();
+				  opt.onload_callback = function() {
+				  if (typeof(url) != 'undefined') {
+				    window.location = url;
+				  }
+				}
+				var conv_handler = window['google_trackConversion'];
+				if (typeof(conv_handler) == 'function') {
+				  conv_handler(opt);
+				  }
+				}
+				goog_report_conversion();  (function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"21000157"};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq"); obApi('track', 'Form Fill');
+	            return false;
+	            });
+	    	});
+			</script>
+		</div>
+	</div>
+
+	<div class="panel">
+		<div class="container">
+			<div class="step-1">
+				<h2>Messaging is consumers’ #1 choice for communicating with&nbsp;brands*</h2>
+				<h5>With the LiveEngage messaging platform, brands offer the level of service consumers expect — right on their mobile&nbsp;phones.</h5>
+				<p class="finePrint">*Surveys of 3001 US-based consumer, ages 18-65, conducted by Survata Research, August&nbsp;2016.</p>
+			</div>
+		</div>
+	</div>
+
+	<div id="menu">
+		<ul>
+			<li class="features">Features</li>
+			<li class="scalability">Scalability</li>
+			<li class="benefits">Benefits</li>
+			<li class="video">Video</li>
+		</ul>
+	</div>
+
+	<!-- INTRO TEXT -->
+	<div class="panel introText">
+		<div class="container">
+			<div id="numberedPoints" class="extendedIntroText">
+				
+				<h2>A continuous connection begins with a single touch</h2>
+				
+				<div class="numberedPoints">
+					<div class="botSecret">
+						<div class="secret secretOne">
+							<h4 class="lead lead-blue">Add messaging directly  within your app</h4>
+							<p>Adoption is simple, as consumers  are already used to the channel.</p>
+						</div>
+						<div class="secretImage">
+							<img src='https://engage.liveperson.com/usage/img/point1.png'>
+						</div>
+					</div>
+
+					<div class="botSecret">
+						<div class="secret secretTwo">
+							<h4 class="lead lead-blue">It works like the messaging apps consumers already use and love</h4>
+							<p>Names, pictures, delivery times, read receipts,  typing indicators, and more. As with popular messaging apps, conversations develop over time on the consumer's terms.</p>
+						</div>
+						<div class="secretImage">
+							<img src='https://engage.liveperson.com/usage/img/point2.png'>
+						</div>
+					</div>
+
+					<div class="botSecret">
+						<div class="secret secretThree">
+							<h4 class="lead lead-blue">No more sessions — just a continuous connection that works on the consumer’s timetable</h4>
+							<p>Push notifications bring consumers back into the conversation so they can go about their day before getting a response. No forced "sessions", no more waiting on hold.</p>
+						</div>
+						<div class="secretImage">
+							<img src='https://engage.liveperson.com/usage/img/point3.png'>
+						</div>
+					</div>
+				</div>
+
+				<div id="breakOutDiv" class="panel grey noBottomPadding">
+					<div class="container">
+						<h2>LiveEngage works and syncs across all devices</h2>
+						<p class="subheading">Consumers can connect from any device and always see the shared history.</p>
+						<img src="https://engage.liveperson.com/usage/img/allDevices.png" />
+					</div>
+				</div>
+
+				<div id="scalability" class="panel">
+					<h2>Manage and optimize it all at scale</h2>
+					<p class="subheading">LiveEngage in-app messaging runs through your connection center operations at scale and is optimized for agents as well as the consumer’s messaging experience. With an infrastructure that supports up to 2.5B visits/month and close to 1.4M concurrent connections globally, LiveEngage infrastructure has been proven to support high-volume operations and data.</p>
+					<p class="subheading">Through Neighborhoods and Bots, consumers are routed to the best team, bot or individual agent for their needs and not just the next person or bot available.</p>
+					<img src="https://engage.liveperson.com/usage/img/active-connections.png" />
+
+					<div class="orange">
+						<h4>Neighborhoods</h4>
+						<p>Our Neighborhoods approach structures agents in small teams responsible for books of business. Consumers are routed to the best team or individual agent for their needs, not just the next person available. The efficiency gains available in digital make this possible, and it can dramatically improve customer service and sales</p>
+						<img src="https://engage.liveperson.com/usage/img/neighborhoods.png" />
+					</div>
+
+					<div class="orange">
+						<h4>BOTS</h4>
+						<p>Bots are like human agents but with limited (or specialist) capabilities and unlimited capacity. LiveEngage lets you manage all your agents in one place, with AI and automation to get both great efficiency and high customer satisfaction.</p>
+						<img src="https://engage.liveperson.com/usage/img/bots-example.png" />
+					</div>
+					
+					<div class="orange">
+						<h4>Meaningful Connection Score</h4>
+						<p>The Meaningful Connection Score (MCS) is an automated, unbiased way of measuring the health of the relationship between consumers and brands. Instead of relying on customer surveys, it analyzes each line of a consumer's conversation with a brand for positive or negative sentiment and provides a score in real time.</p>
+						<img src="https://engage.liveperson.com/usage/img/mcs.png" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="benefits" class="panel grey">
+		<div class="container">
+			<div class="step-2">
+				<div class="columns">
+					<h2>Benefits</h2>
+					<div>
+						<img src='https://engage.liveperson.com/usage/img/usage-campaign-icons/forever-heart.png'>
+						<p>Connect with customers digitally and create brand relationships that&nbsp;last.</p>
+					</div>
+					<div>
+						<img src='https://engage.liveperson.com/usage/img/usage-campaign-icons/clock.png'>
+						<p>Reduce costs by up to 48% and increase CSAT up to&nbsp;92%.</p>
+					</div>
+					<div>
+						<img src='https://engage.liveperson.com/usage/img/usage-campaign-icons/agent.png'>
+						<p>Keep staff happier — meaning lower staff attrition, training costs, and&nbsp;more.</p>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</div>
+
+	<div id="video" class="panel stats">
+		<div class="container">
+			<h2>Shifting your calls to&nbsp;messaging</h2>
+			<div class="youtubevideowrap">
+				<div class="video-container">
+					<iframe width="994" height="559" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; width: 100%; height: 100%; border: none;" src="https://players.brightcove.net/902047215001/default_default/index.html?videoId=5375942282001" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- BOTTOM MARKETO FORM -->
+	<script type="text/javascript">
+	    function resize() {
+	        var heights = window.innerHeight - 140;
+	        document.getElementById("hero").style.height = heights + "px";
+	    }
+	    resize();
+	    window.onresize = function() {
+	        resize();
+	    };
+
+		$('.clickThis').on('click', function() {
+			$(this).toggleClass("rotate");
+			var target = $(this).attr('rel');
+	    	$('#'+target).slideToggle(400);
+		});
+	</script>
+
+	<div class="pane footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<ul class="menu">
+						<li class="first leaf">
+							<a href="https://www.liveperson.com/policies/copyright">Copyright</a>
+						</li>
+						<li class="leaf">
+							<a href="https://www.liveperson.com/policies/privacy">Privacy Policy</a>
+						</li>
+						<li class="leaf">
+							<a href="https://www.liveperson.com/policies/terms-of-use">Terms of Use</a>
+						</li>
+						<li class="last leaf">© 
+							<script type="text/javascript">document.write(new Date().getFullYear());</script> LivePerson, Inc. All rights reserved.
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>		
+</body>
+</html>

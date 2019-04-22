@@ -1,0 +1,3213 @@
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0
+}
+
+body.locked {
+    position: fixed;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block
+}
+
+audio,
+canvas,
+progress,
+video {
+    display: inline-block;
+    vertical-align: baseline
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0
+}
+
+[hidden],
+template {
+    display: none
+}
+
+a {
+    background-color: transparent
+}
+
+a:active,
+a:hover {
+    outline: 0
+}
+
+abbr[title] {
+    border-bottom: 1px dotted
+}
+
+b,
+strong {
+    font-weight: bold
+}
+
+dfn {
+    font-style: italic
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0
+}
+
+mark {
+    background: #ff0;
+    color: #000
+}
+
+small {
+    font-size: 80%
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sup {
+    top: -0.5em
+}
+
+sub {
+    bottom: -0.25em
+}
+
+img {
+    border: 0
+}
+
+svg:not(:root) {
+    overflow: hidden
+}
+
+figure {
+    margin: 1em 40px
+}
+
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0
+}
+
+pre {
+    overflow: auto
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0
+}
+
+button {
+    overflow: visible
+}
+
+button,
+select {
+    text-transform: none
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer
+}
+
+button[disabled],
+html input[disabled] {
+    cursor: default
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0
+}
+
+input {
+    line-height: normal
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    height: auto
+}
+
+input[type="search"] {
+    -webkit-appearance: textfield;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em
+}
+
+legend {
+    border: 0;
+    padding: 0
+}
+
+textarea {
+    overflow: auto
+}
+
+optgroup {
+    font-weight: bold
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+td,
+th {
+    padding: 0
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.btn {
+    appearance: none;
+    background-color: #ff720b;
+    border: 0;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Open Sans", Tahoma, Arial, sans-serif;
+    font-size: 100%;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 600;
+    line-height: 1;
+    padding: .75em 1.5em;
+    text-decoration: none;
+    transition: background-color 150ms ease;
+    user-select: none;
+    vertical-align: middle;
+    white-space: nowrap
+}
+
+button:hover,
+button:focus,
+input[type="button"]:hover,
+input[type="button"]:focus,
+input[type="reset"]:hover,
+input[type="reset"]:focus,
+input[type="submit"]:hover,
+input[type="submit"]:focus,
+.btn:hover,
+.btn:focus {
+    background-color: #ff8328;
+    color: #fff
+}
+
+button:disabled,
+input[type="button"]:disabled,
+input[type="reset"]:disabled,
+input[type="submit"]:disabled,
+.btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.5
+}
+
+button:disabled:hover,
+input[type="button"]:disabled:hover,
+input[type="reset"]:disabled:hover,
+input[type="submit"]:disabled:hover,
+.btn:disabled:hover {
+    background-color: #ff720b
+}
+
+fieldset {
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    padding: 0
+}
+
+legend {
+    font-weight: 600;
+    margin-bottom: .375em;
+    padding: 0
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: .375em
+}
+
+input,
+select,
+textarea {
+    display: block;
+    font-family: "Open Sans", Tahoma, Arial, sans-serif;
+    font-size: 100%
+}
+
+textarea {
+    resize: vertical
+}
+
+[type="search"] {
+    appearance: none
+}
+
+[type="checkbox"],
+[type="radio"] {
+    display: inline;
+    margin-right: .375em
+}
+
+[type="file"] {
+    margin-bottom: .75em;
+    width: 100%
+}
+
+select {
+    margin-bottom: .75em;
+    max-width: 100%;
+    width: auto
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit
+}
+
+.section {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.section::after {
+    clear: both;
+    content: "";
+    display: block
+}
+
+ul,
+ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0
+}
+
+dl {
+    margin: 0
+}
+
+dt {
+    font-weight: 600;
+    margin: 0
+}
+
+dd {
+    margin: 0
+}
+
+figure {
+    margin: 0
+}
+
+img,
+picture {
+    margin: 0;
+    max-width: 100%
+}
+
+table {
+    border-collapse: collapse;
+    margin: 1.5em 0;
+    table-layout: fixed;
+    width: 100%
+}
+
+th {
+    border-bottom: 1px solid #b7b7b7;
+    font-weight: 600;
+    padding: .75em;
+    text-align: left
+}
+
+td {
+    border-bottom: 1px solid #f4f4f4;
+    border-right: 16px solid #fff;
+    padding: .75em
+}
+
+th:last-child,
+td:last-child {
+    border-right: 0
+}
+
+tr,
+td,
+th {
+    vertical-align: middle
+}
+
+body {
+    color: #333;
+    font-family: "Open Sans", Tahoma, Arial, sans-serif;
+    font-size: 100%;
+    line-height: 1.5
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Roboto Slab", Georgia, serif;
+    font-size: 1.333em;
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 0 0 .75em
+}
+
+h1 {
+    font-size: 2.5em;
+    line-height: 1.2em;
+    margin-bottom: .6em
+}
+
+h2 {
+    font-size: 2em;
+    line-height: 1.5em;
+    margin-bottom: 0.75em
+}
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.333333333333333em;
+    margin-bottom: 1em
+}
+
+h4 {
+    font-size: 1.3125em;
+    line-height: 1.142857142857143em;
+    margin-bottom: 1.142857142857143em
+}
+
+h5 {
+    font-size: 1.125em;
+    line-height: 1.333333333333333em;
+    margin-bottom: 1.333333333333333em
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.5em;
+    margin: 0 0 1.5em
+}
+
+.lead {
+    font-size: 1.55em;
+    line-height: 1.5238095238em;
+    margin-bottom: 1.5238095238em
+}
+
+blockquote {
+    margin: 0 0 1em;
+    padding-left: 1em;
+    border-color: #5879da;
+    border-style: solid;
+    border-width: 0 0 0 .25em
+}
+
+blockquote p {
+    margin-bottom: .25em;
+    font-family: "Roboto Slab", Georgia, serif;
+    font-size: 1.3125em;
+    line-height: 1.5238095238em;
+    margin-bottom: 0;
+    color: #162036
+}
+
+blockquote cite {
+    margin-bottom: 1.5em;
+    font-family: "Open Sans", Tahoma, Arial, sans-serif;
+    font-size: .7619047619em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5em;
+    color: #888
+}
+
+blockquote cite em {
+    font-style: normal;
+    font-weight: 400
+}
+
+a {
+    color: #ff720b;
+    text-decoration: none;
+    transition: color 150ms ease
+}
+
+a:active,
+a:focus,
+a:hover {
+    color: #bf5608
+}
+
+hr {
+    border-bottom: 1px solid #f4f4f4;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    margin: 1.5em 0
+}
+
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 2em
+}
+
+.container::after {
+    clear: both;
+    content: "";
+    display: block
+}
+
+@media screen and (min-width: 960px) {
+    aside {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 23.23176%
+    }
+    aside:last-child {
+        margin-right: 0
+    }
+    section {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 74.41059%
+    }
+    section:last-child {
+        margin-right: 0
+    }
+    header nav {
+        text-align: left
+    }
+    .hero {
+        padding: 10em 0
+    }
+    .panel {
+        padding-top: 4em;
+        padding-bottom: 4em
+    }
+}
+
+header nav {
+    padding: .75em 1.5em;
+    text-align: center
+}
+
+.nav li {
+    display: block
+}
+
+.nav a {
+    display: block;
+    border-radius: 4px;
+    color: #888
+}
+
+.nav a:hover {
+    background: #f4f4f4
+}
+
+.nav-pills a {
+    padding: 1em
+}
+
+.lp-component__source--title {
+    margin-top: 1em;
+    margin-bottom: 1em
+}
+
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 2em
+}
+
+.container::after {
+    clear: both;
+    content: "";
+    display: block
+}
+
+header nav {
+    padding: .75em 1.5em;
+    text-align: center
+}
+
+.nav li {
+    display: block
+}
+
+.nav a {
+    display: block;
+    border-radius: 4px;
+    color: #888
+}
+
+.nav a:hover {
+    background: #f4f4f4
+}
+
+.nav-pills a {
+    padding: 1em
+}
+
+.section {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.section::after {
+    clear: both;
+    content: "";
+    display: block
+}
+
+.last-col {
+    margin-right: 0
+}
+
+.lead-blue {
+    color: #0cf;
+    margin-top: 0;
+    margin-bottom: 0.3em
+}
+
+.hero {
+    padding: 2em 0
+}
+
+.hero-mobile-campaigns {
+    background-image: -webkit-linear-gradient(-90deg, rgba(88, 121, 218, 0) 30%, rgba(88, 121, 218, 0.75) 100%), url("https://engage.liveperson.com/usage/img/hero-background-16090701.png");
+    background-image: linear-gradient(-90deg, rgba(88, 121, 218, 0) 30%, rgba(88, 121, 218, 0.75) 100%), url("https://engage.liveperson.com/usage/img/hero-background-16090701.png");
+    color: #fff;
+    background-position: center;
+    background-size: cover
+}
+
+.hero-mobile-campaigns .hero-text:before {
+    content: "\2014";
+    display: block;
+    margin-bottom: .5em;
+    font-size: 4em;
+    font-weight: bold;
+    line-height: 0;
+    color: #ff720b
+}
+
+.hero-mobile-campaigns .hero-text {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 82.94039%;
+    text-shadow: 0 1px 1px rgba(51, 51, 51, 0.2)
+}
+
+@media screen and (min-width: 640px) {
+    .hero-mobile-campaigns .hero-text {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 48.82117%;
+        font-size: 1.3em
+    }
+    .hero-mobile-campaigns .hero-text:last-child {
+        margin-right: 0
+    }
+}
+
+.hero-mobile-campaigns .hero-text:last-child {
+    margin-right: 0
+}
+
+.hero-mobile-campaigns .hero-text p:last-child {
+    margin-bottom: 0
+}
+
+.panel {
+    overflow: hidden;
+    padding-top: 2em;
+    padding-bottom: 2em
+}
+
+.panel p:last-child {
+    margin-bottom: 0
+}
+
+.panel-light-grey {
+    background: #f4f4f4
+}
+
+.subheading {
+    color: #535353;
+    font-size: 1.3em;
+    line-height: 1.75em;
+    text-align: center
+}
+
+.lead-blue {
+    color: #5879da;
+    margin-top: 0;
+    margin-bottom: 0.5em
+}
+
+.lead-blue:before {
+    content: "\2014";
+    display: block;
+    margin-bottom: .5em;
+    font-size: 3em;
+    font-weight: bold;
+    line-height: 0;
+    color: #ff720b
+}
+
+.primary-cta {
+    font-size: 1.25em;
+    text-align: center
+}
+
+.primary-cta a {
+    margin: 0 auto
+}
+
+.footer {
+    padding: 2em 1em 1em;
+    background: #162036;
+    color: #fff;
+    font-size: .75em;
+    text-align: center
+}
+
+.body-usage-campaign .panel {
+    padding: 5em 0
+}
+
+.body-usage-campaign h2 {
+    font-size: 2.25em;
+    line-height: 1.35em;
+    text-align: center
+}
+
+.body-usage-campaign .form .container p,
+.body-usage-campaign form p {
+    text-align: left;
+    display: inline-block;
+    padding-right: 67px
+}
+
+.body-usage-campaign .hero {
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    padding: 0 0;
+    min-height: 625px;
+    max-height: 768px;
+    color: #fff
+}
+
+.body-usage-campaign .hero h1 {
+    font-size: 1.85em;
+    margin-bottom: 0.3em;
+    font-family: 'Roboto Slab', serif
+}
+
+.body-usage-campaign .hero p {
+    margin-bottom: 0
+}
+
+.body-usage-campaign .hero.hero-in-app-messaging {
+    background-image: url("https://engage.liveperson.com/usage/img/inAppMessagingBackground.jpg");
+    padding-top: 60px;
+    min-height: 704px
+}
+
+.body-usage-campaign .hero.hero-in-app-messaging .hero-text {
+    text-align: center !important;
+    width: 100% !important;
+    padding-top: 40px;
+    font-size: 1.3em
+}
+
+.body-usage-campaign .hero.hero-in-app-messaging img {
+    width: 300px;
+    position: absolute;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0
+}
+
+form {
+    width: 100% !important;
+    margin: 0 auto;
+    text-align: center !important
+}
+
+.form {
+    background: #5879da;
+    padding: 1em 0;
+    width: 100%;
+    display: table;
+    text-align: center;
+    color: #fff;
+    min-height: 86px
+}
+
+.form.top {
+    position: absolute;
+    bottom: 0
+}
+
+#video {
+    position: relative;
+}
+
+.youtubevideowrap {
+    display: block; 
+    position: relative; 
+    max-width: 994px; 
+    margin: 0 auto;
+}
+
+.video-container {
+    padding-bottom: 56.25%;
+}
+
+.form.bottom {
+    position: relative
+}
+
+.form.bottom p {
+    margin-bottom: 0
+}
+
+#menu {
+    display: inline-block;
+    width: 100%;
+    background-color: #FAFAFA;
+    color: #fff;
+    text-align: center
+}
+
+#menu ul {
+    display: inline-block;
+    color: #000;
+}
+
+#menu ul li {
+    float: left;
+    margin: 13px 25px;
+}
+
+#menu ul li {
+    color: #000;
+    padding: 0 25px 11px 25px
+}
+
+#menu li a:hover {
+    border-bottom: 3px solid #5879DA
+}
+
+.extendedIntroText {
+    max-width: 928px;
+    margin: 0 auto
+}
+
+.extendedIntroText .orange {
+    text-align: left;
+    max-width: 796px;
+    margin: 70px auto
+}
+
+.extendedIntroText .orange img {
+    margin-top: 30px
+}
+
+.extendedIntroText .orange:before {
+    content: "";
+    display: block;
+    height: 138px;
+    width: 8px;
+    background-color: #FF720B;
+    float: left;
+    margin-right: 10px
+}
+
+.body-usage-campaign .step-1 {
+    float: none;
+    max-width: 928px;
+    margin: 0em auto !important;
+    text-align: center
+}
+
+.body-usage-campaign .step-1:before {
+    content: none
+}
+
+.body-usage-campaign .step-1 h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    margin-bottom: 20px
+}
+
+.body-usage-campaign .step-1 h5 {
+    font-family: 'Open Sans', sans-serif;
+    color: #535353;
+    font-size: 1.3em;
+    margin-bottom: 1em
+}
+
+.body-usage-campaign .step-1 p {
+    color: #535353;
+    font-size: 1.3em
+}
+
+.body-usage-campaign .step-1 .finePrint {
+    font-size: 0.9em
+}
+
+.body-usage-campaign.agent-widget .step-2 .bulletPoints {
+    display: block;
+    border-top: 1px solid #888888;
+    padding-top: 40px;
+    width: 100%;
+    font-size: 20px
+}
+
+.body-usage-campaign.agent-widget .step-2 .bulletPoints ul {
+    list-style-image: url(https://engage.liveperson.com/usage/img/circle-bullet.svg);
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%
+}
+
+.body-usage-campaign.agent-widget .step-2 .bulletPoints ul:last-child {
+    margin-right: 0
+}
+
+.body-usage-campaign.agent-widget .step-2 .bulletPoints ul h4 {
+    font-size: 20px
+}
+
+.body-usage-campaign .step-2 {
+    padding-bottom: 0
+}
+
+.body-usage-campaign .step-2:before {
+    content: none
+}
+
+.body-usage-campaign .step-2 h4 {
+    font-size: 1.2em;
+    line-height: 1.4em;
+    min-height: 28px
+}
+
+.body-usage-campaign .step-2 .columns {
+    display: inline-block;
+    margin-bottom: 50px
+}
+
+.body-usage-campaign .step-2 .columns img {
+    width: 64px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 20px
+}
+
+.body-usage-campaign .step-2 .columns div {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    margin-bottom: 0
+}
+
+.body-usage-campaign .step-2 .columns div:last-child {
+    margin-right: 0
+}
+
+.body-usage-campaign .step-2 .fullWidth {
+    clear: both;
+    border-top: 1px solid #d8d8d8;
+    padding: 40px 0 0 0
+}
+
+.body-usage-campaign .step-2 .fullWidth img {
+    display: block
+}
+
+.body-usage-campaign .step-2 .video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden
+}
+
+.body-usage-campaign .step-2 .video-container iframe,
+.body-usage-campaign .step-2 .video-container object,
+.body-usage-campaign .step-2 .video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+
+.body-usage-campaign .step-2 .step2AdditionalPoints {
+    margin-top: 40px
+}
+
+.body-usage-campaign .step-2 .step2AdditionalPoints ul {
+    display: inline-block;
+    margin-top: 50px
+}
+
+.body-usage-campaign .step-2 .step2AdditionalPoints ul li {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%;
+    float: left;
+    padding: 20px;
+    border-right: 1px solid #979797
+}
+
+.body-usage-campaign .step-2 .step2AdditionalPoints ul li:last-child {
+    margin-right: 0
+}
+
+.body-usage-campaign .step-2 .step2AdditionalPoints ul li img {
+    float: left;
+    padding: 5px 20px 0 0
+}
+
+.body-usage-campaign .step-2 .step2AdditionalPoints ul li p {
+    text-align: left;
+    padding-left: 55px
+}
+
+.body-usage-campaign .step-2 .step2AdditionalPoints ul li p strong {
+    color: #5676DD
+}
+
+.body-usage-campaign .step-2 .bulletPoints {
+    display: inline-block;
+    border-top: 1px solid #888888;
+    padding-top: 40px
+}
+
+.body-usage-campaign .step-2 .bulletPoints ul {
+    list-style-image: url(../img/blue-bullet.svg);
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%
+}
+
+.body-usage-campaign .step-2 .bulletPoints ul:last-child {
+    margin-right: 0
+}
+
+.body-usage-campaign .step-2 .bulletPoints ul h4 {
+    font-size: 20px
+}
+
+.body-usage-campaign .step-2 .bulletPoints ul li {
+    line-height: 28px;
+    margin: 20px 0
+}
+
+.columns:last-child,
+.step2AdditionalPoints ul:last-child {
+    margin-right: 0
+}
+
+.fullWidth h2,
+.step2AdditionalPoints h2 {
+    margin-bottom: 0.4em
+}
+
+.body-usage-campaign .step-4.twoColumn h4 {
+    text-align: center
+}
+
+.body-usage-campaign .step-4.twoColumn ul li {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 40.29137%;
+    margin-right: 0
+}
+
+.body-usage-campaign .step-4.twoColumn ul li blockquote {
+    display: none
+}
+
+.body-usage-campaign .step-4.twoColumn ul li:last-child {
+    margin-right: 0
+}
+
+.body-usage-campaign .step-4.twoColumn ul li:nth-child(2) {
+    margin-left: 17.05961%
+}
+
+.body-usage-campaign .step-4.twoColumn .results blockquote {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 40.29137%;
+    margin-right: 0
+}
+
+.body-usage-campaign .step-4.twoColumn .results blockquote span {
+    color: #5879DA;
+    font-weight: 600
+}
+
+.body-usage-campaign .step-4.twoColumn .results blockquote:last-child {
+    margin-right: 0
+}
+
+.body-usage-campaign .step-4.twoColumn .results blockquote:nth-child(2) {
+    margin-left: 17.05961%
+}
+
+.body-usage-campaign .step-4.imageOnly {
+    display: block;
+    margin: 0 auto
+}
+
+.body-usage-campaign .step-4.imageOnly img {
+    width: 45%;
+    display: block;
+    margin: 0 auto
+}
+
+.body-usage-campaign .step-4.imageAndText {
+    margin: 0;
+    display: block
+}
+
+.body-usage-campaign .step-4.imageAndText img {
+    float: left;
+    width: 40%;
+    margin-right: 10%
+}
+
+.body-usage-campaign .step-4.imageAndText ul {
+    display: inline-block;
+    margin-top: 100px;
+    width: 50%
+}
+
+.body-usage-campaign .step-4.imageAndText ul li {
+    margin: 20px
+}
+
+.body-usage-campaign .step-4.imageAndText ul li:before {
+    content: "";
+    background-image: url("https://engage.liveperson.com/usage/img/orangeOval.png");
+    height: 6px;
+    width: 6px;
+    display: inline-block;
+    background-size: 100%;
+    margin: 0 10px 2px 0
+}
+
+.body-usage-campaign .step-4.imageAndText ul span {
+    color: #5676DD
+}
+
+.body-usage-campaign .step-4.textThenImage .demoImage {
+    margin: 115px 0 0 0
+}
+
+.body-usage-campaign .step-4.textThenImage ul {
+    margin: 0 auto;
+    width: 100%;
+    display: inline-block;
+    margin-top: 30px
+}
+
+.body-usage-campaign .step-4.textThenImage ul li {
+    width: 40%
+}
+
+.body-usage-campaign .step-4.textThenImage ul li img {
+    width: 64px;
+    float: left;
+    margin-right: 35px
+}
+
+.body-usage-campaign .step-4.textThenImage ul li p {
+    padding-left: 100px
+}
+
+.body-usage-campaign .step-5 .leftRight {
+    display: inline-block;
+    width: 100%;
+    margin-top: 4em;
+    max-width: 1440px
+}
+
+.body-usage-campaign .step-5 .leftRight div {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%
+}
+
+.body-usage-campaign .step-5 .leftRight div:last-child {
+    margin-right: 0
+}
+
+.body-usage-campaign .step-5 .leftRight div img {
+    margin: 0
+}
+
+.body-usage-campaign .step-5 .leftRight div p {
+    opacity: 1;
+    text-align: left
+}
+
+.body-usage-campaign .step-5 .leftRight div:last-child {
+    max-width: 446px;
+    margin-left: 2.35765%
+}
+
+.body-usage-campaign .step-5 .leftRight .rightDiv {
+    width: 37%;
+    float: right
+}
+
+.body-usage-campaign .step-5 .leftRight .rightDiv span {
+    color: #5879DA;
+    font-weight: bold
+}
+
+.body-usage-campaign .step-5 h2 {
+    color: #fff;
+    margin-bottom: 0em;
+    max-width: 700px;
+    margin: 0 auto
+}
+
+.body-usage-campaign .step-5 p {
+    color: white;
+    font-weight: normal;
+    opacity: 0.7;
+    margin: 0 auto;
+    max-width: 800px
+}
+
+.body-usage-campaign .step-5 .blockQuotes {
+    display: inline-block;
+    margin-top: 40px
+}
+
+.body-usage-campaign .step-5 .blockQuotes:nth-child(2) {
+    border: 1px solid white
+}
+
+.body-usage-campaign .step-5 .blockQuotes.stats {
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px
+}
+
+.body-usage-campaign .step-5 blockquote {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    color: #fff
+}
+
+.body-usage-campaign .step-5 blockquote:last-child {
+    margin-right: 0
+}
+
+.body-usage-campaign .step-5 blockquote:nth-child(1) {
+    margin-left: 17.05961%
+}
+
+.body-usage-campaign .step-5 blockquote:nth-child(2) {
+    margin-left: 8.5298%
+}
+
+.body-usage-campaign .step-5 blockquote p {
+    font-family: 'Roboto Slab', sans-serif;
+    padding-bottom: 15px;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    line-height: 1.3em;
+    opacity: 1
+}
+
+.body-usage-campaign .step-5 blockquote .stat span {
+    font-size: 90px;
+    line-height: 90px;
+    display: block
+}
+
+.body-usage-campaign .step-5 blockquote h4 {
+    font-weight: lighter;
+    line-height: 23px;
+    font-size: 1.1em;
+    opacity: 1
+}
+
+.body-usage-campaign .step-5 blockquote cite {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px
+}
+
+.body-usage-campaign .step-5 img {
+    margin: 0 auto;
+    display: block;
+    line-height: 0;
+    max-width: 828px;
+    width: 100%
+}
+
+.body-usage-campaign .step-5 .imageInsteadOfQuotes {
+    margin-top: 60px
+}
+
+.body-usage-campaign .step-5.twoColumn h4 {
+    text-align: center
+}
+
+.body-usage-campaign .step-5.twoColumn ul {
+    display: inline-block;
+    margin-bottom: 40px
+}
+
+.body-usage-campaign .step-5.twoColumn ul li {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 40.29137%;
+    margin-right: 0
+}
+
+.body-usage-campaign .step-5.twoColumn ul li blockquote {
+    border-left: 0.25em solid #5879da
+}
+
+.body-usage-campaign .step-5.twoColumn ul li p {
+    margin: 0 0 1.5em;
+    text-align: left;
+    opacity: 1
+}
+
+.body-usage-campaign .step-5.twoColumn ul li:last-child {
+    margin-right: 0
+}
+
+.body-usage-campaign .step-5.twoColumn ul li:nth-child(2) {
+    margin-left: 17.05961%
+}
+
+.body-usage-campaign .step-5.twoColumn ul li img {
+    margin: 0 auto;
+    display: block
+}
+
+.body-usage-campaign .step-5.twoColumn ul .results {
+    display: inline-block;
+    margin-top: 40px
+}
+
+.body-usage-campaign .step-5.twoColumn ul .results blockquote {
+    width: 100%;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 40.29137%;
+    margin-left: 0
+}
+
+.body-usage-campaign .step-5.twoColumn ul .results blockquote span {
+    color: #5879DA;
+    font-weight: 600
+}
+
+.body-usage-campaign .step-5.twoColumn ul .results blockquote:last-child {
+    margin-right: 0
+}
+
+.body-usage-campaign .step-5.twoColumn ul .results blockquote:nth-child(2) {
+    margin-left: 17.05961%
+}
+
+.body-usage-campaign .step-6 ul {
+    display: inline-block;
+    margin-top: 50px
+}
+
+.body-usage-campaign .step-6 ul li {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%
+}
+
+.body-usage-campaign .step-6 ul li:last-child {
+    margin-right: 0
+}
+
+.body-usage-campaign .step-5.twoColumn .imgLeft {
+    width: 115px
+}
+
+.body-usage-campaign .step-5.twoColumn .imgRight {
+    width: 44px
+}
+
+.body-usage-campaign.in-app-messaging .step-2 {
+    line-height: 0
+}
+
+.body-usage-campaign.in-app-messaging .step-2 h4 {
+    display: none
+}
+
+.body-usage-campaign.in-app-messaging .stats {
+    background-color: #53B7E0
+}
+
+.body-usage-campaign.in-app-messaging .stats h2 {
+    color: #fff
+}
+
+.body-usage-campaign.in-app-messaging #breakOutDiv {
+    margin-left: -100%; 
+    margin-right: -100%; 
+    text-align: center;
+}
+
+.body-usage-campaign.in-app-messaging #breakOutDiv img {
+    margin: 0 auto; 
+    display: block; 
+    max-width: 1125px; 
+    width: 100%;
+}
+
+.body-usage-campaign.in-app-messaging #breakOutDiv .container {
+    width: 35%
+}
+
+.body-usage-campaign.in-app-messaging .introText {
+    padding-bottom: 0
+}
+
+.body-usage-campaign.in-app-messaging .introText .numberedPoints {
+    display: inline-block;
+    width: 100%;
+    margin-top: 60px;
+    padding-bottom: 3em
+}
+
+.body-usage-campaign.in-app-messaging .introText .numberedPoints .botSecret {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 10em;
+    margin-top: 5em;
+    text-align: center;
+    position: relative
+}
+
+.body-usage-campaign.in-app-messaging .introText .numberedPoints .botSecret div {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%
+}
+
+.body-usage-campaign.in-app-messaging .introText .numberedPoints .botSecret div:last-child {
+    margin-right: 0
+}
+
+.body-usage-campaign.in-app-messaging .introText .numberedPoints .botSecret .secret {
+    position: relative;
+    padding: 80px 0;
+    text-align: left
+}
+
+.body-usage-campaign.in-app-messaging .introText .numberedPoints .botSecret .secretImage {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+.body-usage-campaign.in-app-messaging .introText .numberedPoints .botSecret .secretImage img {
+    width: 355px
+}
+
+.body-usage-campaign.in-app-messaging .introText .numberedPoints .botSecret:nth-child(2) .secret {
+    margin-left: 51.17883%;
+    margin-right: 0
+}
+
+.body-usage-campaign.in-app-messaging .introText .numberedPoints .botSecret:nth-child(2) .secretImage {
+    left: 0;
+    text-align: left
+}
+
+.body-usage-campaign.in-app-messaging .introText .numberedPoints .botSecret:nth-child(4) .secret {
+    margin-left: 51.17883%;
+    margin-right: 0
+}
+
+.body-usage-campaign.in-app-messaging .introText .numberedPoints .botSecret:nth-child(4) .secretImage {
+    left: 0;
+    text-align: left
+}
+
+.body-usage-campaign.in-app-messaging .secretOne:before,
+.body-usage-campaign.in-app-messaging .secretTwo:before,
+.body-usage-campaign.in-app-messaging .secretThree:before,
+.body-usage-campaign.in-app-messaging .secretFour:before {
+    position: absolute;
+    top: -.15em;
+    left: -.1em;
+    font-size: 20em;
+    font-weight: bold;
+    line-height: 1em;
+    color: rgba(51, 51, 51, 0.08)
+}
+
+.body-usage-campaign.in-app-messaging #scalability {
+    text-align: center;
+}
+
+.body-usage-campaign.in-app-messaging #scalability > img {
+    margin-top: 30px;
+}
+
+.body-usage-campaign.in-app-messaging #scalability .orange {
+    color: #5879DA;
+}
+.body-usage-campaign.in-app-messaging #scalability .orange p {
+    color: #000;
+}
+
+.body-usage-campaign.in-app-messaging #benefits p {
+    text-align: left;
+}
+
+
+
+@media screen and (min-width: 960px) {
+    .body-usage-campaign.in-app-messaging .secretOne:before,
+    .body-usage-campaign.in-app-messaging .secretTwo:before,
+    .body-usage-campaign.in-app-messaging .secretThree:before,
+    .body-usage-campaign.in-app-messaging .secretFour:before {
+        top: -.15em;
+        left: -.1em;
+        font-size: 28em
+    }
+}
+
+.secretOne:before {
+    content: "1"
+}
+
+.secretTwo:before {
+    content: "2"
+}
+
+.secretThree:before {
+    content: "3"
+}
+
+.secretFour:before {
+    content: "4"
+}
+
+.orangePipe {
+    margin-bottom: 40px
+}
+
+.orangePipe p {
+    padding-left: 28px
+}
+
+.orangePipe:before {
+    height: 92px;
+    width: 8px;
+    content: "";
+    background-color: #ff720b;
+    margin-right: 20px;
+    float: left
+}
+
+.blue {
+    background-color: #162036
+}
+
+.grey {
+    background-color: #f4f4f4
+}
+
+.noBottomPadding {
+    padding-bottom: 0 !important;
+    line-height: 0
+}
+
+label,
+.mktoOffset,
+.mktoAsterix,
+.mktoGutter {
+    display: none
+}
+
+.mktoFormRow {
+    float: left !important;
+    clear: none !important;
+    margin-right: 0px !important
+}
+
+.mktoButtonRow {
+    float: left
+}
+
+.mktoButtonWrap {
+    margin-left: 0 !important
+}
+
+.mktoFormCol,
+.mktoForm input,
+.mktoForm select {
+    display: inline !important;
+    margin-right: 10px !important
+}
+
+@media (max-width: 1204px) and (min-width: 1184px) {
+    .mktoFormCol,
+    .mktoForm input,
+    .mktoForm select {
+        margin-right: 5px !important
+    }
+}
+
+.mktoForm input {
+    padding: 1em !important;
+    border: 1px solid #ccc;
+    height: auto !important;
+    border-radius: 4px;
+    background: #fff;
+    font-size: 16px !important;
+    line-height: 1.25em !important;
+    font-family: "Open Sans", sans-serif;
+    width: 266px !important
+}
+
+.mktoForm input::placeholder {
+    color: #333
+}
+
+.mktoForm button,
+.mktoButtonWrap.mktoSimple .mktoButton {
+    padding: 1em 1.25em !important;
+    border: 1px solid #ff720b !important;
+    border-radius: 4px;
+    background: #ff720b !important;
+    font-size: 16px !important;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif !important;
+    line-height: 1.25em !important;
+    width: 266px !important
+}
+
+.mktoButtonWrap.mktoSimple .mktoButton:hover {
+    background: #ff8328 !important;
+    border: 1px solid #ff8328 !important
+}
+
+.mktoFieldDescriptor.mktoFormCol {
+    margin-bottom: 0 !important
+}
+
+.top_nav .button {
+    text-align: center;
+    cursor: pointer;
+    padding: 0.6em 1em;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    -o-border-radius: 1px;
+    border-radius: 1px;
+    text-decoration: none;
+    -o-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    font-weight: 400;
+    margin: 0 auto;
+    display: block;
+    border: solid white 2px;
+    color: #fff;
+    display: table;
+    width: auto
+}
+
+.top_nav .top_menu .left {
+    float: left
+}
+
+.top_nav .top_menu .right {
+    float: right
+}
+
+.top_nav {
+    padding: 0;
+    margin: 0;
+    z-index: 9998
+}
+
+.top_nav .top_menu {
+    width: 100%;
+    z-index: 999
+}
+
+.top_nav .top_menu .left,
+.top_nav .top_menu .right {
+    padding-top: 0px
+}
+
+.top_nav .top_menu .logo {
+    cursor: pointer;
+    float: left
+}
+
+.top_nav .top_menu .right {
+    display: inline;
+    position: absolute;
+    right: 20px;
+    top: 0
+}
+
+.top_nav .top_menu .button {
+    margin: 0;
+    float: left
+}
+
+.nav-2017.nav-desktop {
+    display: none
+}
+
+.nav-2017.nav-mobile *,
+.nav-2017.nav-mobile *::after,
+.nav-2017.nav-mobile *::before,
+.nav-2017.nav-desktop *,
+.nav-2017.nav-desktop *::after,
+.nav-2017.nav-desktop *::before {
+    box-sizing: border-box
+}
+
+.nav-2017 .top_nav .top_menu {
+    padding: 14px 10px
+}
+
+.nav-2017 .top_nav .top_menu * {
+    font-family: open sans, arial, sans-serif
+}
+
+.nav-2017 .top_nav .nav-link-div {
+    float: left;
+    position: relative;
+    padding: 10px 16px 0px
+}
+
+.nav-2017 .top_nav .top_menu .top-menu-container .right {
+    position: initial
+}
+
+.nav-2017 .top_nav .nav-link {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    line-height: 22px
+}
+
+.nav-2017 .top_nav .nav-open {
+    display: none;
+    background: #ffffff;
+    width: 289px;
+    position: absolute;
+    left: -15px;
+    top: 52px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.35)
+}
+
+.nav-2017 .top_nav .nav-open:before {
+    content: "";
+    position: absolute;
+    left: 51px;
+    top: -10px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 15px 10px 15px;
+    border-color: transparent transparent #ffffff transparent;
+    z-index: 9999
+}
+
+.nav-2017 .top_nav .nav-open.nav-open-solutions {
+    width: 452px
+}
+
+.nav-2017 .top_nav .nav-open.nav-open-solutions h3 {
+    padding-left: 35px;
+    font-size: 16px
+}
+
+.nav-2017 .top_nav .nav-link-platform:hover .nav-link,
+.nav-2017 .top_nav .nav-link-resources:hover .nav-link,
+.nav-2017 .top_nav .nav-link-company:hover .nav-link,
+.nav-2017 .top_nav .nav-link-partners:hover .nav-link {
+    padding-bottom: 20px
+}
+
+.nav-2017 .top_nav .nav-link-div:hover .nav-open {
+    display: block
+}
+
+.nav-2017 .top_nav .nav-open .nav-open-top {
+    background: #F8F8F8;
+    padding: 32px
+}
+
+.nav-2017 .top_nav .nav-open .nav-open-title {
+    color: #162036;
+    font-size: 24px;
+    font-weight: 300;
+    display: block;
+    margin-bottom: 12px
+}
+
+.nav-2017 .top_nav .nav-open .nav-open-title:hover {
+    color: #ff720b;
+    text-decoration: none
+}
+
+.nav-2017 .top_nav .nav-open .nav-open-content {
+    color: #162036;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    margin-bottom: 0
+}
+
+.nav-2017 .top_nav .nav-link-partners .nav-open .nav-open-content {
+    width: 65%
+}
+
+.nav-2017 .top_nav .nav-open .nav-open-bottom {
+    float: left;
+    padding: 32px 0
+}
+
+.nav-2017 .top_nav .nav-open .nav-open-bottom-col-2 {
+    float: left;
+    width: 53%
+}
+
+.nav-2017 .top_nav .nav-open .nav-open-bottom-col-2:first-child {
+    width: 47%
+}
+
+.nav-2017 .top_nav .nav-open .nav-open-bottom-col-2:first-child::before {
+    content: "";
+    border-right: 1px solid #e8e8e8;
+    position: absolute;
+    height: 388px;
+    margin-top: 42px;
+    left: 213px
+}
+
+.nav-2017 .top_nav .nav-open .nav-open-bottom-col-3 {
+    float: left;
+    width: 33%;
+    padding-right: 32px;
+    padding-bottom: 20px
+}
+
+.nav-2017 .top_nav .nav-open .nav-open-bottom-col-4 {
+    float: left;
+    width: 25%;
+    padding-right: 32px;
+    padding-bottom: 20px
+}
+
+.nav-2017 .top_nav .nav-open .nav-open-subtitle {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: #162036;
+    margin-bottom: 16px;
+    text-transform: uppercase
+}
+
+.nav-2017 .top_nav .nav-open .nav-open-subtitle-row2 {
+    margin-top: 40px
+}
+
+.nav-2017 .top_nav .nav-open .nav-open-sublink {
+    font-size: 16px;
+    line-height: 24px;
+    color: #162036;
+    display: inline-block;
+    width: 100%;
+    font-weight: 500;
+    padding: 16px 32px;
+    position: relative
+}
+
+.nav-2017 .top_nav .nav-open p.nav-open-sublink {
+    opacity: 0.5
+}
+
+.nav-2017 .top_nav .nav-open a.nav-open-sublink:hover {
+    color: #5879da;
+    background: #f4f4f4;
+    text-decoration: none
+}
+
+.nav-2017 .top_nav .nav-open.nav-open-solutions .nav-open-sublink,
+.nav-2017 .top_nav .nav-open.nav-open-products .nav-open-sublink,
+.nav-2017 .top_nav .nav-open.nav-open-partners .nav-open-sublink,
+.nav-2017 .top_nav .nav-open.nav-open-resources .nav-open-sublink,
+.nav-2017 .top_nav .nav-open.nav-open-company .nav-open-sublink {
+    padding: 16px 24px 16px 86px
+}
+
+.nav-2017 .top_nav .nav-open.nav-open-solutions a.nav-open-sublink::before,
+.nav-2017 .top_nav .nav-open.nav-open-products a.nav-open-sublink::before,
+.nav-open.nav-open-partners a.nav-open-sublink::before,
+.nav-open.nav-open-resources a.nav-open-sublink::before,
+.nav-open.nav-open-company a.nav-open-sublink::before {
+    position: absolute;
+    left: 34px;
+    top: 14px;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    content: ""
+}
+
+@media (-webkit-max-device-pixel-ratio: 1),
+(max-resolution: 1.49dppx) {
+    .nav-2017 .top_nav .nav-open.nav-open-solutions a.nav-open-sublink::before,
+    .nav-2017 .top_nav .nav-open.nav-open-products a.nav-open-sublink::before,
+    .nav-open.nav-open-partners a.nav-open-sublink::before,
+    .nav-open.nav-open-resources a.nav-open-sublink::before,
+    .nav-open.nav-open-company a.nav-open-sublink::before {
+        background-image: url(https://www.liveperson.com/assets/img/nav/nav-icons-sprite.png)
+    }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.1),
+(min-resolution: 1.5dppx) {
+    .nav-2017 .top_nav .nav-open.nav-open-solutions a.nav-open-sublink::before,
+    .nav-2017 .top_nav .nav-open.nav-open-products a.nav-open-sublink::before,
+    .nav-open.nav-open-partners a.nav-open-sublink::before,
+    .nav-open.nav-open-resources a.nav-open-sublink::before,
+    .nav-open.nav-open-company a.nav-open-sublink::before {
+        background-image: url(https://www.liveperson.com/assets/img/nav/nav-icons-sprite@2x.png);
+        background-size: 210px 300px
+    }
+}
+
+.nav-2017 .top_nav .nav-open a.nav-open-sublink.nav-open-sublink-finserv::before {
+    background-position: -120px -240px
+}
+
+.nav-2017 .top_nav .nav-open a.nav-open-sublink.nav-open-sublink-finserv:hover::before {
+    background-position: -60px -270px
+}
+
+.nav-2017 .top_nav .nav-open a.nav-open-sublink.nav-open-sublink-insurance::before {
+    background-position: 0px -240px
+}
+
+.nav-2017 .top_nav .nav-open a.nav-open-sublink.nav-open-sublink-insurance:hover::before {
+    background-position: -30px -240px
+}
+
+.nav-2017 .top_nav .nav-open a.nav-open-sublink.nav-open-sublink-retail::before {
+    background-position: -60px -240px
+}
+
+.nav-2017 .top_nav .nav-open a.nav-open-sublink.nav-open-sublink-retail:hover::before {
+    background-position: -90px -240px
+}
+
+.nav-2017 .top_nav .nav-open a.nav-open-sublink.nav-open-sublink-travel::before {
+    background-position: -30px -270px
+}
+
+.nav-2017 .top_nav .nav-open a.nav-open-sublink.nav-open-sublink-travel:hover::before {
+    background-position: 0px -270px
+}
+
+.nav-2017 .top_nav .nav-open a.nav-open-sublink.nav-open-sublink-automotive::before {
+    background-position: -60px 0px
+}
+
+.nav-2017 .top_nav .nav-open a.nav-open-sublink.nav-open-sublink-automotive:hover::before {
+    background-position: -90px 0px
+}
+
+.nav-2017 .top_nav .nav-open a.nav-open-sublink.nav-open-sublink-healthcare::before {
+    background-position: 0px 0px
+}
+
+.nav-2017 .top_nav .nav-open a.nav-open-sublink.nav-open-sublink-healthcare:hover::before {
+    background-position: -30px 0px
+}
+
+.nav-2017 .top_nav .nav-open a.nav-open-sublink.nav-open-sublink-education::before {
+    background-position: -120px 0px
+}
+
+.nav-2017 .top_nav .nav-open a.nav-open-sublink.nav-open-sublink-education:hover::before {
+    background-position: -120px -30px
+}
+
+.nav-2017 .top_nav .nav-open a.nav-open-sublink.nav-open-sublink-marketing::before {
+    background-position: -150px -90px
+}
+
+.nav-2017 .top_nav .nav-open a.nav-open-sublink.nav-open-sublink-marketing:hover::before {
+    background-position: -180px -90px
+}
+
+.nav-2017 .top_nav .nav-open a.nav-open-sublink.nav-open-sublink-sales::before {
+    background-position: -150px -30px
+}
+
+.nav-2017 .top_nav .nav-open a.nav-open-sublink.nav-open-sublink-sales:hover::before {
+    background-position: -180px -30px
+}
+
+.nav-2017 .top_nav .nav-open a.nav-open-sublink.nav-open-sublink-customer-care::before {
+    background-position: -150px -60px
+}
+
+.nav-2017 .top_nav .nav-open a.nav-open-sublink.nav-open-sublink-customer-care:hover::before {
+    background-position: -180px -60px
+}
+
+.nav-2017 .top_nav .nav-open a.nav-open-sublink.nav-open-sublink-messaging-channels::before {
+    background-position: -30px -30px
+}
+
+.nav-2017 .top_nav .nav-open a.nav-open-sublink.nav-open-sublink-messaging-channels:hover::before {
+    background-position: 0px -30px
+}
+
+.nav-2017 .top_nav .nav-open a.nav-open-sublink.nav-open-sublink-ai-bots::before {
+    background-position: -60px -60px
+}
+
+.nav-2017 .top_nav .nav-open a.nav-open-sublink.nav-open-sublink-ai-bots:hover::before {
+    background-position: -90px -60px
+}
+
+.nav-2017 .top_nav .nav-open a.nav-open-sublink.nav-open-sublink-ctm::before {
+    background-position: -150px -210px
+}
+
+.nav-2017 .top_nav .nav-open a.nav-open-sublink.nav-open-sublink-ctm:hover::before {
+    background-position: -180px -210px
+}
+
+.nav-2017 .top_nav .nav-open a.nav-open-sublink.nav-open-sublink-advanced-management::before {
+    background-position: -90px -30px
+}
+
+.nav-2017 .top_nav .nav-open a.nav-open-sublink.nav-open-sublink-advanced-management:hover::before {
+    background-position: -60px -30px
+}
+
+.nav-2017 .top_nav .nav-open a.nav-open-sublink.nav-open-sublink-expert-services::before {
+    background-position: 0px -60px
+}
+
+.nav-2017 .top_nav .nav-open a.nav-open-sublink.nav-open-sublink-expert-services:hover::before {
+    background-position: -30px -60px
+}
+
+.nav-2017 .top_nav .nav-open a.nav-open-sublink.nav-open-sublink-reseller::before {
+    background-position: -120px -60px
+}
+
+.nav-2017 .top_nav .nav-open a.nav-open-sublink.nav-open-sublink-reseller:hover::before {
+    background-position: -120px -90px
+}
+
+.nav-2017 .top_nav .nav-open a.nav-open-sublink.nav-open-sublink-referral::before {
+    background-position: -90px -210px
+}
+
+.nav-2017 .top_nav .nav-open a.nav-open-sublink.nav-open-sublink-referral:hover::before {
+    background-position: -60px -210px
+}
+
+.nav-2017 .top_nav .nav-open a.nav-open-sublink.nav-open-sublink-resources::before {
+    background-position: -120px -120px
+}
+
+.nav-2017 .top_nav .nav-open a.nav-open-sublink.nav-open-sublink-resources:hover::before {
+    background-position: -120px -150px
+}
+
+.nav-2017 .top_nav .nav-open a.nav-open-sublink.nav-open-sublink-blog::before {
+    background-position: -90px -90px
+}
+
+.nav-2017 .top_nav .nav-open a.nav-open-sublink.nav-open-sublink-blog:hover::before {
+    background-position: -60px -90px
+}
+
+.nav-2017 .top_nav .nav-open a.nav-open-sublink.nav-open-sublink-training::before {
+    background-position: -60px -180px
+}
+
+.nav-2017 .top_nav .nav-open a.nav-open-sublink.nav-open-sublink-training:hover::before {
+    background-position: -90px -180px
+}
+
+.nav-2017 .top_nav .nav-open a.nav-open-sublink.nav-open-sublink-developers::before {
+    background-position: -120px -180px
+}
+
+.nav-2017 .top_nav .nav-open a.nav-open-sublink.nav-open-sublink-developers:hover::before {
+    background-position: -120px -210px
+}
+
+.nav-2017 .top_nav .nav-open a.nav-open-sublink.nav-open-sublink-support::before {
+    background-position: -30px -150px
+}
+
+.nav-2017 .top_nav .nav-open a.nav-open-sublink.nav-open-sublink-support:hover::before {
+    background-position: 0px -150px
+}
+
+.nav-2017 .top_nav .nav-open a.nav-open-sublink.nav-open-sublink-knowledge::before {
+    background-position: -150px -240px
+}
+
+.nav-2017 .top_nav .nav-open a.nav-open-sublink.nav-open-sublink-knowledge:hover::before {
+    background-position: -180px -240px
+}
+
+.nav-2017 .top_nav .nav-open a.nav-open-sublink.nav-open-sublink-about::before {
+    background-position: -30px -90px
+}
+
+.nav-2017 .top_nav .nav-open a.nav-open-sublink.nav-open-sublink-about:hover::before {
+    background-position: 0px -90px
+}
+
+.nav-2017 .top_nav .nav-open a.nav-open-sublink.nav-open-sublink-pr::before {
+    background-position: 0px -120px
+}
+
+.nav-2017 .top_nav .nav-open a.nav-open-sublink.nav-open-sublink-pr:hover::before {
+    background-position: -30px -120px
+}
+
+.nav-2017 .top_nav .nav-open a.nav-open-sublink.nav-open-sublink-ir::before {
+    background-position: -90px -150px
+}
+
+.nav-2017 .top_nav .nav-open a.nav-open-sublink.nav-open-sublink-ir:hover::before {
+    background-position: -60px -150px
+}
+
+.nav-2017 .top_nav .nav-open a.nav-open-sublink.nav-open-sublink-careers::before {
+    background-position: -60px -120px
+}
+
+.nav-2017 .top_nav .nav-open a.nav-open-sublink.nav-open-sublink-careers:hover::before {
+    background-position: -90px -120px
+}
+
+.nav-2017 .top_nav .nav-open a.nav-open-sublink.nav-open-sublink-contact::before {
+    background-position: 0px -180px
+}
+
+.nav-2017 .top_nav .nav-open a.nav-open-sublink.nav-open-sublink-contact:hover::before {
+    background-position: -30px -180px
+}
+
+.nav-2017 .top_nav .nav-open a.nav-open-sublink.nav-open-sublink-telco::before {
+    background-position: -30px -210px
+}
+
+.nav-2017 .top_nav .nav-open a.nav-open-sublink.nav-open-sublink-telco:hover::before {
+    background-position: 0px -210px
+}
+
+.nav-2017 .top_nav .nav-open .nav-open-sublink:last-child {
+    margin-bottom: 0
+}
+
+.top_nav .top_menu .button.hamburger {
+    cursor: pointer;
+    border: none;
+    background: url("https://www.liveperson.com/sites/default/files/pictures/home/assets/menu_orange.png") no-repeat center center transparent;
+    background-size: 24px;
+    margin-top: -7px
+}
+
+.top_nav .top_menu .button.hamburger:hover,
+.top_nav .top_menu .button.hamburger:active,
+.top_nav .top_menu .button.hamburger:focus {
+    color: #f68a1f;
+    background-size: 24px
+}
+
+.top_nav .top_menu.scroll .button,
+.top_nav .top_menu.dark .button {
+    border: solid #f68a1f 2px;
+    color: #f68a1f
+}
+
+.top_nav .top_menu.scroll .button:not(.hamburger):hover,
+.top_nav .top_menu.scroll .button:not(.hamburger):active,
+.top_nav .top_menu.scroll .button:not(.hamburger):focus,
+.top_nav .top_menu.dark .button:not(.hamburger):hover,
+.top_nav .top_menu.dark .button:not(.hamburger):active,
+.top_nav .top_menu.dark .button:not(.hamburger):focus {
+    border: solid #ea7400 2px;
+    background: #ea7400;
+    color: #fff
+}
+
+.top_nav .top_menu.scroll .button.hamburger,
+.top_nav .top_menu.dark .button.hamburger {
+    border: none;
+    background: url("https://www.liveperson.com/sites/default/files/pictures/home/assets/menu_orange.png") no-repeat center center transparent;
+    background-size: 24px;
+    padding-top: 14px
+}
+
+.top_nav .top_menu.scroll .button.sign-in,
+.top_nav .top_menu.dark .button.sign-in {
+    top: 7px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+    height: 40px
+}
+
+.nav-2017 .top_nav .top_menu.scroll .nav-link,
+.nav-2017 .top_nav .top_menu.dark .nav-link {
+    color: #162036
+}
+
+.nav-2017.nav-mobile .top_nav .top_menu {
+    position: relative
+}
+
+.nav-2017.nav-mobile .logo {
+    display: block;
+    margin: 3px auto 4px;
+    float: none;
+    width: 151px
+}
+
+.nav-2017.nav-mobile .logo a {
+    margin-left: -10px
+}
+
+.nav-2017.nav-mobile .button.sign-in {
+    position: absolute;
+    font-weight: 600;
+    top: 9px;
+    right: 0;
+    width: auto;
+    border: 0;
+    color: #ff720b
+}
+
+.nav-2017 .nav-mobile-internal {
+    background: #162036;
+    color: #ffffff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    padding: 16px;
+    display: none
+}
+
+.nav-2017 .nav-mobile-internal p {
+    color: #ffffff
+}
+
+.nav-2017 .top_nav .top_menu .nav-mobile-internal .button.hamburger {
+    background: none;
+    padding: 9px;
+    display: block;
+    font-size: 24px
+}
+
+.nav-2017.nav-mobile .nav-mobile-internal .button.sign-in {
+    color: #ffffff;
+    top: 12px
+}
+
+.nav-2017 .nav-mobile-internal p,
+.nav-2017 .nav-mobile-internal li,
+.nav-2017 .nav-mobile-internal ul {
+    margin: 0;
+    padding: 0
+}
+
+.nav-2017 .nav-mobile-internal .nav-mobile-header {
+    clear: both;
+    opacity: 0.5;
+    font-size: 14px;
+    line-height: 19px;
+    border-bottom: 1px solid #ffffff;
+    width: 100%;
+    text-transform: uppercase;
+    padding-bottom: 8px
+}
+
+.nav-2017 .nav-mobile-internal .nav-mobile-header:first-of-type {
+    margin-top: 20px
+}
+
+.nav-2017 .nav-mobile-internal .nav-mobile-sub-ul {
+    list-style: none;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    padding-top: 8px;
+    padding-bottom: 16px
+}
+
+.nav-2017 .nav-mobile-internal .nav-mobile-sub-li {
+    line-height: 44px
+}
+
+.nav-2017 .nav-mobile-internal .nav-mobile-sub-li .nav-open-sublink {
+    color: #ffffff;
+    text-decoration: none
+}
+
+.nav-2017 .nav-mobile-internal .nav-mobile-sub-open {
+    cursor: pointer
+}
+
+.nav-2017 .nav-mobile-internal .nav-mobile-sub-open:before {
+    background-image: url(https://www.liveperson.com/sites/default/files/pictures/nav/button-exapand-collapse-menu-item.png);
+    background-size: 100%;
+    width: 18px;
+    height: 11px;
+    content: "";
+    display: inline-block;
+    float: right;
+    margin-right: 20px;
+    margin-top: 18px
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 2) {
+    .nav-2017 .nav-mobile-internal .nav-mobile-sub-open:before {
+        background-image: url(https://www.liveperson.com/sites/default/files/pictures/nav/button-expand-collapse-menu-item@2x.png)
+    }
+}
+
+.nav-2017 .nav-mobile-internal .nav-mobile-sub-opened:before {
+    transform: rotate(180deg)
+}
+
+.nav-2017 .nav-mobile-internal .nav-mobile-sub-sub-ul {
+    border-left: 2px solid #ffffff;
+    padding-left: 20px;
+    list-style: none;
+    display: none
+}
+
+.nav-2017 .nav-mobile-internal .nav-mobile-sub-sub-ul .nav-mobile-sub-li {
+    font-weight: 400;
+    line-height: 36px
+}
+
+.nav-2017 .nav-mobile-internal .nav-mobile-sub-open-solutions .nav-mobile-sub-li {
+    padding-left: 30px
+}
+
+.nav-2017 .nav-mobile-internal .nav-mobile-sub-open-solutions .nav-mobile-sub-li-header {
+    padding-left: 0px;
+    font-weight: 600
+}
+
+.top_nav .top_drawer {
+    display: none;
+    position: fixed;
+    margin: -2px 0 0 -2px;
+    padding: 0;
+    width: 100.5%;
+    height: 100%;
+    z-index: 999;
+    background: #1d1d1d;
+    -webkit-box-shadow: 2px 8px 5px -5px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 2px 8px 5px -5px rgba(0, 0, 0, 0.15);
+    box-shadow: 2px 8px 5px -5px rgba(0, 0, 0, 0.15)
+}
+
+.top_nav .top_drawer li {
+    list-style-type: none;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-top: 0em !important
+}
+
+.top_nav ul.top_drawer li {
+    line-height: 1em !important
+}
+
+.top_nav ul.top_drawer li:nth-child(1) {
+    height: 0px
+}
+
+.top_nav .top_drawer li a {
+    color: #55B9DF
+}
+
+.top_nav .top_drawer li a.close {
+    cursor: pointer;
+    padding: 0.4em 1em;
+    background: url("https://www.liveperson.com/sites/default/files/pictures/home/assets/menu_close.png") no-repeat 90% top transparent;
+    background-size: 20px;
+    display: block;
+    margin: 0 auto
+}
+
+.top_nav .top_drawer li a.close:hover,
+.top_nav .top_drawer li a.close:active,
+.top_nav .top_drawer li a.close:focus {
+    text-decoration: none
+}
+
+.top_nav .top_drawer .button {
+    display: inline-block
+}
+
+.top_nav .top_drawer .button:first-of-type {
+    margin: 0 auto;
+    display: block !important;
+    width: 200px
+}
+
+.top_nav .top_drawer li.highlight a img {
+    margin: 10px auto 0 auto;
+    display: block
+}
+
+.top_nav .top_drawer .button.orange {
+    padding: 0.4em 1em
+}
+
+.top_nav .top_drawer .button,
+.top_nav .top_drawer select,
+.top_nav .top_drawer select option {
+    color: #55B9DF;
+    background: #1d1d1d
+}
+
+.top_nav .top_drawer .button,
+.top_nav .top_drawer select {
+    border: solid #55B9DF 2px
+}
+
+.top_nav .top_drawer .button:not(.orange):hover,
+.top_nav .top_drawer .button:not(.orange):focus,
+.top_nav .top_drawer .button:not(.orange):active {
+    border: solid #ea7400 2px;
+    color: #fff
+}
+
+.top_nav .top_drawer select {
+    padding: 0.95em 1em;
+    background: url("https://www.liveperson.com/sites/default/files/pictures/home/assets/down-arrow.png") no-repeat 90% center;
+    background-size: 12px;
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: "";
+    display: none
+}
+
+.top_nav .top_drawer select::-ms-expand {
+    display: none
+}
+
+.top_nav .top_drawer select option {
+    cursor: pointer
+}
+
+@media all and (min-width: 980px) and (min-device-width: 980px),
+all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation: landscape) {
+    .top_nav .top_menu {
+        padding: 20px 10px;
+        background-color: #fff;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none
+    }
+    .top_nav .top_menu .top-menu-container {
+        position: relative;
+        max-width: 1170px;
+        margin-left: auto;
+        margin-right: auto
+    }
+    .top_nav .top_menu .left {
+        display: block;
+        float: left;
+        padding-top: 0;
+        padding-left: 20px
+    }
+    .top_nav .top_menu .right {
+        position: relative;
+        margin-right: 20px
+    }
+    .top_nav .top_menu .button.sign-in {
+        display: block;
+        margin-left: 20px;
+        margin-right: 10px;
+        border: solid #fff 2px;
+        border-radius: 4px;
+        margin-top: 3px
+    }
+    .top_nav .top_menu.scroll .button.sign-in,
+    .top_nav .top_menu.dark .button.sign-in {
+        margin-top: 3px
+    }
+    .top_nav .top_menu.scroll .button,
+    .top_nav .top_menu.dark .button {
+        border: solid #f68a1f 2px
+    }
+    .top_nav .top_menu .button.sign-in:hover {
+        border: 2px solid #FF720B !important;
+        background: #FF720B !important;
+        text-decoration: none
+    }
+    .top_nav .top_menu .logo {
+        float: none;
+        margin-top: 9px
+    }
+    .top_nav .top_menu .button.hamburger {
+        background: url("https://www.liveperson.com/sites/default/files/pictures/home/assets/menu_white.png") no-repeat center center transparent;
+        background-size: 24px
+    }
+    .top_nav .top_menu .button.hamburger:hover,
+    .top_nav .top_menu .button.hamburger:active,
+    .top_nav .top_menu .button.hamburger:focus {
+        background: url("https://www.liveperson.com/sites/default/files/pictures/home/assets/menu_orange.png") no-repeat center center transparent;
+        background-size: 24px
+    }
+    .top_nav .top_drawer {
+        display: none;
+        width: 271px;
+        right: 0;
+        margin: -2px 0 0 0;
+        padding: 0;
+        font-size: 15px;
+        position: fixed;
+        z-index: 9999;
+        background: #1d1d1d
+    }
+    .top_nav ul.top_drawer li {
+        text-align: left;
+        line-height: 1em !important
+    }
+    .top_nav ul.top_drawer li:nth-child(1) {
+        height: auto
+    }
+    .top_nav .top_drawer li.border {
+        border-bottom: 1px solid #181818;
+        box-shadow: inset 0 0px 0 #1B262D, 0 1px 0 #1B262D;
+        padding: 1em
+    }
+    .top_nav .top_drawer li.border:not(.highlight) a:hover {
+        text-decoration: none;
+        border-left: solid #55B9DF 3px
+    }
+    .top_nav .top_drawer li.highlight a img {
+        height: 30px;
+        margin: 10px 0 0 4px;
+        display: inline
+    }
+    .top_nav .top_drawer li a {
+        padding-left: 10px
+    }
+    .top_nav .top_drawer li a#popup_new_window {
+        padding-left: 26px
+    }
+    .top_nav .top_drawer li a.close {
+        background-position: center center
+    }
+    .top_nav .top_drawer .button,
+    .top_nav .top_drawer.close {
+        width: 172px
+    }
+    .top_nav .top_drawer .button {
+        padding: 1em
+    }
+    .top_nav .top_menu,
+    .top_nav .top_menu.scroll {
+        border-bottom: none
+    }
+    .top_nav .top_menu {
+        position: relative;
+        top: 0;
+        height: 72px
+    }
+    .top_nav .top_drawer select {
+        width: 207px;
+        margin: 0 auto !important;
+        display: block
+    }
+    .top_nav .top_drawer select:focus {
+        box-shadow: 0 0 5px #55B9DF;
+        border: 1px solid #55B9DF
+    }
+    .nav-2017.nav-desktop {
+        display: block;
+        width: 100%
+    }
+    .nav-2017.nav-mobile {
+        display: none
+    }
+}
+
+.nav-2017.nav-desktop {
+    position: absolute
+}
+
+.top_nav .top_menu {
+    background: none
+}
+
+.nav-2017 .top_nav .top_menu.dark .nav-link {
+    color: #ffffff;
+    cursor: pointer
+}
+
+.top_nav .top_menu.dark .button {
+    border: solid #ffffff 2px;
+    color: #ffffff
+}
+
+.nav-2017.nav-mobile {
+    display: block;
+    position: absolute;
+    width: 100%
+}
+
+.top_nav .top_menu .button.hamburger {
+    background: url("https://www.liveperson.com/sites/default/files/pictures/home/assets/menu_white.png") no-repeat center center transparent;
+    background-size: 24px
+}
+
+.nav-2017.nav-mobile .button.sign-in {
+    color: #ffffff
+}
+
+@media all and (min-width: 980px) and (min-device-width: 980px),
+all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation: landscape) {
+    .nav-2017.nav-mobile {
+        display: none
+    }
+}
+
+.top_nav .top_menu .nav-mobile-internal .button.hamburger {
+    margin-top: -11px
+}
+
+.nav-2017.nav-mobile .logo a img {
+    margin-top: 2px
+}
+
+header nav {
+    display: none
+}
+
+.footer {
+    padding: 24px 0;
+    background: #162036;
+    color: rgba(255, 255, 255, 0.25);
+    text-align: center
+}
+
+.footer .menu {
+    margin: 0;
+    font-size: 14px
+}
+
+.footer .menu li {
+    display: inline-block;
+    padding: 0 8px;
+    list-style-type: none
+}
+
+.footer a {
+    color: rgba(255, 255, 255, 0.25)
+}
+
+/********/
+.form.top {
+    position: fixed;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 1;
+}
+.form.top.swapPosition {
+    position: absolute;
+    z-index: 99999;
+}
+.form.top a .span1,
+.form.top a .span2 {
+    display: none;
+}
+.body-usage-campaign .form .container .shortFormText {
+    display: none;
+}
+
+@media screen and (max-width: 1185px) {
+    form {
+        width: 266px !important
+    }
+    form .mktoFieldWrap {
+        margin-bottom: 5px !important
+    }
+    .form.top .container {
+        display: block !important;
+    }
+    .form.top a .span1 {
+        display: block;
+        padding: 1em;
+        border: 1px solid #ff720b;
+        border-radius: 4px;
+        background: #ff720b;
+        font-size: 16px;
+        font-weight: 600;
+        font-family: "Open Sans", sans-serif;
+        line-height: 1.25em;
+        width: 270px;
+        color: #fff;
+        text-align: center;
+        margin: 0 auto 5px auto;
+    }
+
+    .form.top a .span1.swap,
+    .form.top a .span2 {
+        display: none;
+    }
+
+    .form.top a .span2.swap {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .form.top .container,
+    .form.top a .span2 {
+        display: none;
+    }
+
+    .form.top a .span2.swap {
+        display: block;
+    }
+
+    .mobileForm .span2 img {
+        width: 40px;
+    }
+    .span2 svg {
+        width: 37px;
+    }
+
+    .body-usage-campaign .step-4.textThenImage ul {
+        width: 100%
+    }
+    .body-usage-campaign .step-4.textThenImage ul li {
+        width: 45%
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .body-usage-campaign.agent-widget .step-2 .bulletPoints ul:nth-child(even) {
+        margin-right: 0
+    }
+    .body-usage-campaign .step-2 .step2AdditionalPoints ul li {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 48.82117%;
+        margin-right: 0;
+        border-right: none
+    }
+    .body-usage-campaign .step-2 .step2AdditionalPoints ul li:last-child {
+        margin-right: 0
+    }
+    .body-usage-campaign .step-2 .bulletPoints ul {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 48.82117%
+    }
+    .body-usage-campaign .step-2 .bulletPoints ul:nth-child(even) {
+        margin-right: 0
+    }
+    .body-usage-campaign .step-2 .bulletPoints ul:last-child {
+        margin-right: 0
+    }
+    .body-usage-campaign .step-4.imageOnly img {
+        width: 500px
+    }
+    .body-usage-campaign .step-4.imageAndText img {
+        width: 500px;
+        display: block;
+        margin: 0 auto;
+        float: none
+    }
+    .body-usage-campaign .step-4.imageAndText ul {
+        margin-top: 0;
+        width: 100%
+    }
+    .body-usage-campaign .step-5 .leftRight .leftDiv {
+        margin-bottom: 60px
+    }
+    .body-usage-campaign .step-5 .leftRight .rightDiv {
+        width: 100%;
+        float: none
+    }
+    .body-usage-campaign .step-5 .leftRight {
+        padding: 0 2em
+    }
+    .body-usage-campaign .step-5 .leftRight div {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%
+    }
+    .body-usage-campaign .step-5 .leftRight div:last-child {
+        margin-right: 0
+    }
+    .body-usage-campaign .step-5 .leftRight div .companyLogo {
+        display: none
+    }
+    .body-usage-campaign .step-5 .leftRight div img {
+        margin: 0 auto
+    }
+    .body-usage-campaign .step-5 .leftRight div p {
+        max-width: 700px;
+        margin: 0 auto
+    }
+    .body-usage-campaign .step-5 .leftRight div:last-child {
+        max-width: 100%;
+        margin: 0
+    }
+}
+
+@media screen and (max-width: 908px) {
+    .body-usage-campaign .form .container p,
+    .body-usage-campaign form p {
+        padding-right: 0;
+        text-align: center;
+        padding-bottom: 23px;
+        line-height: 25px
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #menu ul li {
+        margin: 13px 0
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .body-usage-campaign .hero.hero-in-app-messaging .hero-text{
+        padding-top: 50px
+    }
+    .body-usage-campaign .step-2 .columns div {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%;
+        margin-top: 40px
+    }
+    .body-usage-campaign .step-2 .columns div:last-child {
+        margin-right: 0
+    }
+}
+
+@media only screen and (max-width: 670px) {
+    .body-usage-campaign .form .container .shortFormText {
+        display: block;
+    }
+    .longFormText {
+        display: none!important;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .body-usage-campaign .hero.hero-in-app-messaging img {
+        width: 280px
+    }
+    .body-usage-campaign .step-1 p {
+        font-size: 1em
+    }
+    .body-usage-campaign.agent-widget .step-2 .bulletPoints ul {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%;
+        margin-top: 30px
+    }
+    .body-usage-campaign.agent-widget .step-2 .bulletPoints ul:last-child {
+        margin-right: 0
+    }
+    .body-usage-campaign .step-2 h4 {
+        min-height: 0
+    }
+    .body-usage-campaign .step-2 .columns {
+        margin-top: 30px
+    }
+    .body-usage-campaign .step-2 .step2AdditionalPoints ul {
+        margin-top: 0
+    }
+    .body-usage-campaign .step-2 .step2AdditionalPoints ul li {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%;
+        border-right: none
+    }
+    .body-usage-campaign .step-2 .step2AdditionalPoints ul li:last-child {
+        margin-right: 0
+    }
+    .body-usage-campaign .step-2 .bulletPoints ul {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%;
+        margin-top: 30px
+    }
+    .body-usage-campaign .step-2 .bulletPoints ul:last-child {
+        margin-right: 0
+    }
+    .body-usage-campaign .step-4.twoColumn ul li {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%
+    }
+    .body-usage-campaign .step-4.twoColumn ul li blockquote {
+        display: block
+    }
+    .body-usage-campaign .step-4.twoColumn ul li:last-child {
+        margin-right: 0
+    }
+    .body-usage-campaign .step-4.twoColumn ul li:nth-child(2) {
+        margin-left: 0%
+    }
+    .body-usage-campaign .step-4.twoColumn .results blockquote {
+        display: none
+    }
+    .body-usage-campaign .step-4.textThenImage ul li {
+        width: 100%;
+        margin-bottom: 40px
+    }
+    .body-usage-campaign.in-app-messaging .introText .numberedPoints .botSecret {
+        margin-bottom: 3em
+    }
+    .body-usage-campaign.in-app-messaging .introText .numberedPoints .botSecret div {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%
+    }
+    .body-usage-campaign.in-app-messaging .introText .numberedPoints .botSecret div:last-child {
+        margin-right: 0
+    }
+    .body-usage-campaign.in-app-messaging .introText .numberedPoints .botSecret .secretImage {
+        position: relative;
+        transform: initial
+    }
+    .body-usage-campaign.in-app-messaging .introText .numberedPoints .botSecret:nth-child(2) .secret {
+        margin-left: 0%
+    }
+    .body-usage-campaign.in-app-messaging .introText .numberedPoints .botSecret:nth-child(2) .secretImage {
+        text-align: center;
+        margin-left: 0%
+    }
+    .body-usage-campaign.in-app-messaging .introText .numberedPoints .botSecret:nth-child(4) .secret {
+        margin-left: 0%
+    }
+    .body-usage-campaign.in-app-messaging .introText .numberedPoints .botSecret:nth-child(4) .secretImage {
+        text-align: center;
+        margin-left: 0%
+    }
+    .body-usage-campaign .step-5 blockquote {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%;
+        margin-bottom: 60px
+    }
+    .body-usage-campaign .step-5 blockquote:last-child {
+        margin-right: 0
+    }
+    .body-usage-campaign .step-5 blockquote:nth-child(1),
+    .body-usage-campaign .step-5 blockquote:nth-child(2) {
+        margin-left: 0%
+    }
+    .body-usage-campaign .step-5.twoColumn ul li {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%
+    }
+    .body-usage-campaign .step-5.twoColumn ul li blockquote {
+        display: block
+    }
+    .body-usage-campaign .step-5.twoColumn ul li:last-child {
+        margin-right: 0
+    }
+    .body-usage-campaign .step-5.twoColumn ul li:nth-child(2) {
+        margin-left: 0%
+    }
+    .body-usage-campaign .step-5.twoColumn ul .results blockquote {
+        display: none
+    }
+    .body-usage-campaign .step-6 ul li {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%
+    }
+    .body-usage-campaign .step-6 ul li:last-child {
+        margin-right: 0
+    }
+    .orangePipe:before {
+        display: none
+    }
+    .orangePipe p {
+        padding-left: 0
+    }
+}
+
+/** MAX WIDTH 480 **/
+@media screen and (max-width: 480px) {
+    .subheading {
+        font-size: 16px
+    }
+    .body-usage-campaign .panel {
+        padding: 4em 0
+    }
+    .body-usage-campaign .form .container,
+    .body-usage-campaign form {
+        padding: 0
+    }
+    .body-usage-campaign .hero h1,
+    .body-usage-campaign h2
+    {
+        font-size: 1.4em
+    }
+    .body-usage-campaign .hero.hero-in-app-messaging {
+        min-height: 709px
+    }
+    .body-usage-campaign .hero {
+        min-height: 490px
+    }
+    .body-usage-campaign .hero p {
+        font-size: .75em
+    }
+    .body-usage-campaign .step-1 h3 {
+        font-size: 1.333em
+    }
+    .body-usage-campaign .step-1 h5 {
+        font-size: 1.125em
+    }
+    .body-usage-campaign .step-1 .finePrint {
+        font-size: 0.7em
+    }
+    #menu ul .video {
+        display: none
+    }
+    form {
+        width: 270px !important
+    }
+    .body-usage-campaign .step-2 h2 {
+        font-size: 1.5em
+    }
+    .body-usage-campaign .step-2 .columns {
+        margin-top: 0
+    }
+    .body-usage-campaign .step-2 .fullWidth {
+        padding: 4em 0 0 0
+    }
+    .body-usage-campaign .stats h2 {
+        font-size: 1.5em
+    }
+    .body-usage-campaign .step-4.imageOnly img {
+        width: 100%
+    }
+    .body-usage-campaign .step-4.imageAndText img {
+        width: 100%
+    }
+    .body-usage-campaign .step-4.textThenImage .demoImage {
+        margin: 40px 0 0 0
+    }
+    .body-usage-campaign .step-4.textThenImage ul li img {
+        width: 32px;
+        margin-right: 20px
+    }
+    .body-usage-campaign .step-4.textThenImage ul li p {
+        padding-left: 55px
+    }
+    .body-usage-campaign .step-5 h2 {
+        font-size: 1.333em;
+        margin-bottom: 16px
+    }
+    .body-usage-campaign .step-5 blockquote {
+        border: none;
+        margin-bottom: 30px
+    }
+    .body-usage-campaign .step-5.twoColumn ul .results blockquote {
+        margin-bottom: 30px
+    }
+    .body-usage-campaign.in-app-messaging #breakOutDiv .container {
+        width: 40%
+    }
+    .body-usage-campaign.in-app-messaging .introText .numberedPoints .botSecret .secret {
+        padding-bottom: 40px
+    }
+    .mktoForm .mktoFormCol {
+        float: left !important
+    }
+    .mktoForm input {
+        width: 270px !important
+    }
+    .mktoForm button,
+    .mktoButtonWrap.mktoSimple .mktoButton {
+        width: 270px !important
+    }
+}
+    @media screen and (max-width: 420px) {
+    .body-usage-campaign .hero.hero-in-app-messaging img {
+        width: 270px
+    }
+}
